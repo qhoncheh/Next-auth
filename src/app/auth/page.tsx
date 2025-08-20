@@ -57,7 +57,7 @@ const AuthPage = () => {
             >
                 <Input
                     type="text"
-                    label="شماره موبایل ایرانی"
+                    label="شماره موبایل "
                     placeholder="09xxxxxxxxx"
                     ref={phoneRef}
                     error={error ?? undefined}
