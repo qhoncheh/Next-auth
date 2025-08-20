@@ -18,7 +18,7 @@ const DashboardPage = () => {
 
     return (
         <main className={styles.dashboardContainer}>
-            <h1>🖐️ خوش آمدید به داشبورد  </h1>
+            <h1>🖐️Welcome to the Dashboard </h1>
         </main>
     );
 };

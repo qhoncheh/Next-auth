@@ -41,7 +41,7 @@ const AuthPage = () => {
             saveUser(user);
             router.push("/dashboard");
         } catch (e) {
-            setError("خطا در اتصال به سرور");
+            setError("Login to your account");
         } finally {
             setLoading(false);
         }
@@ -49,7 +49,7 @@ const AuthPage = () => {
 
     return (
         <main className={styles.authContainer}>
-            <h1>ورود به حساب کاربری</h1>
+            <h1> Login to your account  </h1>
             <form
                 onSubmit={(e) => {
                     e.preventDefault();
@@ -59,7 +59,7 @@ const AuthPage = () => {
             >
                 <Input
                     type="text"
-                    label="شماره موبایل "
+                    label=" Phone Number "
                     placeholder="09xxxxxxxxx"
                     ref={phoneRef}
                     error={error ?? undefined}
@@ -67,7 +67,7 @@ const AuthPage = () => {
                     inputMode="numeric"
                 />
                 <Button type="submit" disabled={loading}>
-                    {loading ? "در حال ورود..." : "ورود"}
+                    {loading ? "Loading.." : "Login"}
                 </Button>
             </form>
         </main>
