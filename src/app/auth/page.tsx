@@ -59,7 +59,7 @@ const AuthPage = () => {
             >
                 <Input
                     type="text"
-                    label=" Phone Number "
+                    label=" Phone Number : "
                     placeholder="09xxxxxxxxx"
                     ref={phoneRef}
                     error={error ?? undefined}
