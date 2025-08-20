@@ -17,3 +17,13 @@ export interface User {
   };
   nat: string;
 }
+
+export interface ApiResponse {
+    results: User[];
+}
+
+export interface AuthContextType {
+    user: User | null;
+    login: (user: User) => void;
+    logout: () => void;
+}

@@ -3,16 +3,18 @@
 import React, { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import styles from "./Auth.module.scss";
-import { User } from "../lib/type";
+import { ApiResponse } from "../lib/type";
 import { useAuth } from "../hooks/useAuth";
 import { phoneSchema } from "../lib/validation";
 import Input from "../components/Input/Input";
 import Button from "../components/Button/Button";
 
+export type User = {
+    name: string;
+    email: string;
+    picture: string;
+};
 
-interface ApiResponse {
-    results: User[];
-}
 
 const AuthPage = () => {
     const router = useRouter();

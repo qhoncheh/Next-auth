@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { User } from "../lib/type";
 
-
 const USER_KEY = "authUser";
 
 export const useAuth = () => {
